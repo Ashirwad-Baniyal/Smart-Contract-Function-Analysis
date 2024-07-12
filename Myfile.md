@@ -30,8 +30,8 @@ function swapExactTokensForTokens(
 **Used Encoding/Decoding or Call Method: call**
 Explanation
 Purpose:
-The swapExactTokensForTokens function allows users to swap an exact amount of input tokens for as many output tokens as possible, provided the output meets the minimum specified.
+The swapExactTokensForTokens function allows users to swap an exact amount of input tokens for as many output tokens as possible, provided the output meets the minimum specified. This function facilitates decentralized trading by enabling users to exchange tokens in a trustless manner.
 Detailed Usage:
-The function uses call to interact with the token contracts for transferring tokens. It calculates the amounts and performs the swap operations through internal functions.
+The function uses call to interact with the token contracts for transferring tokens. It calculates the amounts and performs the swap operations through internal functions. Specifically, it calls the safeTransferFrom function to handle the transfer of tokens from the user to the contract, ensuring the tokens are securely transferred before executing the swap.
 Impact:
-This function is critical for enabling token swaps on Uniswap, providing liquidity and facilitating decentralized trading on the platform.
+This function is critical for enabling token swaps on Uniswap, providing liquidity and facilitating decentralized trading on the platform. By allowing users to swap tokens directly, it enhances the overall functionality of Uniswap, making it a more versatile and user-friendly decentralized exchange.
